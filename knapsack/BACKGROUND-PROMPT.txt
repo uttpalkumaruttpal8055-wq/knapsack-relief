@@ -1,0 +1,8 @@
+Generated with the built-in ImageGen tool.
+Asset: disaster-response-background.png
+
+Use case: photorealistic-natural. Asset type: wide website background for Knapsack Disaster Intelligence. Primary request: photorealistic cinematic aerial view of an Indian flood disaster response operation, a relief campus with organized supply crates and realistic relief trucks on raised dry road, rescue boats on flooded water in the distance. Calm coordinated preparedness, no distressed victims or graphic injury. Broad atmospheric composition, darker uncluttered left and upper areas for website UI text, meaningful scene details on right and bottom. Natural overcast blue-hour lighting, deep navy, muted teal and warm practical lights. Realistic documentary-style textures and perspective. No text, no logos, no watermarks. A fictional illustrative scene, not a depiction of a specific real disaster.
+
+LOGIN STATUS: Public signup and email/password backend implemented in sibling knapsack-server folder. Run that Node server to use actual authentication. Direct HTML preview is demo-only and does not authenticate. Hosting, email verification and password recovery are not configured.
+DOMAIN STATUS: No custom domain registered or connected. Awaiting the exact requested domain and confirmation that the user owns it, followed by hosted deployment and DNS verification.
+
