@@ -1,0 +1,72 @@
+{
+  "name": "A",
+  "num_qubits": 5,
+  "undirected_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "coupling_map": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "basis_gates": [
+    "rz",
+    "sx",
+    "x",
+    "cx"
+  ],
+  "noise": {
+    "one_qubit": 0.001,
+    "cx": 0.005,
+    "readout": 0.01
+  },
+  "shots": 4096,
+  "optimization_level": 1,
+  "seed": 42,
+  "design_rationale": "Low-degree linear baseline: four physical links, maximum degree two. Forces routing for long-range parity interactions.",
+  "schema": "Participant-defined v1; not an official supplied JSON schema"
+}
