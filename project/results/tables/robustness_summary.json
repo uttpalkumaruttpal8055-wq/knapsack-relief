@@ -1,0 +1,1007 @@
+{
+  "rows": [
+    {
+      "processor": "A",
+      "encoding": "hinge",
+      "mode": "ideal",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 7,
+      "seed_transpiler": 42,
+      "depth": 192,
+      "cx_count": 186,
+      "routing_swaps": 34,
+      "physical_qubits": 5,
+      "total_gates": 257,
+      "ops": {
+        "cx": 186,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "selected_index": 15,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 100.0,
+      "probability_valid": 0.7861328125,
+      "probability_optimal": 0.13623046875,
+      "expected_feasible_value_unconditional": 17.0234375,
+      "expected_feasible_value_conditional": 21.654658385093168,
+      "most_probable_raw_index": 15,
+      "probability_valid_standard_error": 0.006406783773701041,
+      "expected_energy": -21.474853515625,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "A",
+      "encoding": "hinge",
+      "mode": "noisy",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 7,
+      "seed_transpiler": 42,
+      "depth": 192,
+      "cx_count": 186,
+      "routing_swaps": 34,
+      "physical_qubits": 5,
+      "total_gates": 257,
+      "ops": {
+        "cx": 186,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "weight": 15,
+        "value": 24,
+        "feasible": true
+      },
+      "selected_index": 30,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 92.3076923076923,
+      "probability_valid": 0.836181640625,
+      "probability_optimal": 0.075439453125,
+      "expected_feasible_value_unconditional": 15.224365234375,
+      "expected_feasible_value_conditional": 18.207007299270074,
+      "most_probable_raw_index": 30,
+      "probability_valid_standard_error": 0.005782979144001126,
+      "expected_energy": -17.829345703125,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "hinge",
+      "mode": "ideal",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 7,
+      "seed_transpiler": 42,
+      "depth": 140,
+      "cx_count": 105,
+      "routing_swaps": 3,
+      "physical_qubits": 9,
+      "total_gates": 176,
+      "ops": {
+        "cx": 105,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "selected_index": 15,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 100.0,
+      "probability_valid": 0.786865234375,
+      "probability_optimal": 0.13427734375,
+      "expected_feasible_value_unconditional": 17.046630859375,
+      "expected_feasible_value_conditional": 21.66397766056469,
+      "most_probable_raw_index": 15,
+      "probability_valid_standard_error": 0.006398782562943987,
+      "expected_energy": -21.5068359375,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "hinge",
+      "mode": "noisy",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 7,
+      "seed_transpiler": 42,
+      "depth": 140,
+      "cx_count": 105,
+      "routing_swaps": 3,
+      "physical_qubits": 9,
+      "total_gates": 176,
+      "ops": {
+        "cx": 105,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "weight": 15,
+        "value": 24,
+        "feasible": true
+      },
+      "selected_index": 30,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 92.3076923076923,
+      "probability_valid": 0.822265625,
+      "probability_optimal": 0.093017578125,
+      "expected_feasible_value_unconditional": 16.001220703125,
+      "expected_feasible_value_conditional": 19.459916864608076,
+      "most_probable_raw_index": 30,
+      "probability_valid_standard_error": 0.005973265367961949,
+      "expected_energy": -19.04931640625,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "slack",
+      "mode": "ideal",
+      "logical_qubits": 9,
+      "shots": 4096,
+      "seed_simulator": 7,
+      "seed_transpiler": 42,
+      "depth": 111,
+      "cx_count": 117,
+      "routing_swaps": 15,
+      "physical_qubits": 9,
+      "total_gates": 234,
+      "ops": {
+        "cx": 117,
+        "rz": 81,
+        "sx": 27,
+        "measure": 9,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          2,
+          3
+        ],
+        "weight": 7,
+        "value": 11,
+        "feasible": true
+      },
+      "selected_index": 6,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 42.30769230769231,
+      "probability_valid": 0.959716796875,
+      "probability_optimal": 0.0224609375,
+      "expected_feasible_value_unconditional": 14.396484375,
+      "expected_feasible_value_conditional": 15.000763164589163,
+      "most_probable_raw_index": 156,
+      "probability_equality_valid": 0.110595703125,
+      "probability_valid_standard_error": 0.0030722289133212656,
+      "expected_energy": 9.53125,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "slack",
+      "mode": "noisy",
+      "logical_qubits": 9,
+      "shots": 4096,
+      "seed_simulator": 7,
+      "seed_transpiler": 42,
+      "depth": 111,
+      "cx_count": 117,
+      "routing_swaps": 15,
+      "physical_qubits": 9,
+      "total_gates": 234,
+      "ops": {
+        "cx": 117,
+        "rz": 81,
+        "sx": 27,
+        "measure": 9,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          4,
+          5
+        ],
+        "weight": 8,
+        "value": 13,
+        "feasible": true
+      },
+      "selected_index": 24,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 50.0,
+      "probability_valid": 0.93896484375,
+      "probability_optimal": 0.024658203125,
+      "expected_feasible_value_unconditional": 13.905517578125,
+      "expected_feasible_value_conditional": 14.80941237649506,
+      "most_probable_raw_index": 7,
+      "probability_equality_valid": 0.10302734375,
+      "probability_valid_standard_error": 0.0037405436091662836,
+      "expected_energy": 21.7099609375,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "A",
+      "encoding": "hinge",
+      "mode": "ideal",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 123,
+      "seed_transpiler": 42,
+      "depth": 192,
+      "cx_count": 186,
+      "routing_swaps": 34,
+      "physical_qubits": 5,
+      "total_gates": 257,
+      "ops": {
+        "cx": 186,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "selected_index": 15,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 100.0,
+      "probability_valid": 0.780029296875,
+      "probability_optimal": 0.138916015625,
+      "expected_feasible_value_unconditional": 16.941162109375,
+      "expected_feasible_value_conditional": 21.71862284820031,
+      "most_probable_raw_index": 15,
+      "probability_valid_standard_error": 0.0064722890547567104,
+      "expected_energy": -21.5927734375,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "A",
+      "encoding": "hinge",
+      "mode": "noisy",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 123,
+      "seed_transpiler": 42,
+      "depth": 192,
+      "cx_count": 186,
+      "routing_swaps": 34,
+      "physical_qubits": 5,
+      "total_gates": 257,
+      "ops": {
+        "cx": 186,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "weight": 15,
+        "value": 24,
+        "feasible": true
+      },
+      "selected_index": 30,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 92.3076923076923,
+      "probability_valid": 0.838134765625,
+      "probability_optimal": 0.07470703125,
+      "expected_feasible_value_unconditional": 15.287109375,
+      "expected_feasible_value_conditional": 18.239440722400232,
+      "most_probable_raw_index": 30,
+      "probability_valid_standard_error": 0.005755111524641899,
+      "expected_energy": -17.851318359375,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "hinge",
+      "mode": "ideal",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 123,
+      "seed_transpiler": 42,
+      "depth": 140,
+      "cx_count": 105,
+      "routing_swaps": 3,
+      "physical_qubits": 9,
+      "total_gates": 176,
+      "ops": {
+        "cx": 105,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "selected_index": 15,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 100.0,
+      "probability_valid": 0.781494140625,
+      "probability_optimal": 0.140625,
+      "expected_feasible_value_unconditional": 17.052001953125,
+      "expected_feasible_value_conditional": 21.81974383005311,
+      "most_probable_raw_index": 15,
+      "probability_valid_standard_error": 0.00645675686224687,
+      "expected_energy": -21.674560546875,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "hinge",
+      "mode": "noisy",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 123,
+      "seed_transpiler": 42,
+      "depth": 140,
+      "cx_count": 105,
+      "routing_swaps": 3,
+      "physical_qubits": 9,
+      "total_gates": 176,
+      "ops": {
+        "cx": 105,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "weight": 15,
+        "value": 24,
+        "feasible": true
+      },
+      "selected_index": 30,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 92.3076923076923,
+      "probability_valid": 0.821533203125,
+      "probability_optimal": 0.092041015625,
+      "expected_feasible_value_unconditional": 15.957763671875,
+      "expected_feasible_value_conditional": 19.424368499257056,
+      "most_probable_raw_index": 30,
+      "probability_valid_standard_error": 0.005982893894886087,
+      "expected_energy": -19.00390625,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "slack",
+      "mode": "ideal",
+      "logical_qubits": 9,
+      "shots": 4096,
+      "seed_simulator": 123,
+      "seed_transpiler": 42,
+      "depth": 111,
+      "cx_count": 117,
+      "routing_swaps": 15,
+      "physical_qubits": 9,
+      "total_gates": 234,
+      "ops": {
+        "cx": 117,
+        "rz": 81,
+        "sx": 27,
+        "measure": 9,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          5
+        ],
+        "weight": 6,
+        "value": 8,
+        "feasible": true
+      },
+      "selected_index": 16,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 30.76923076923077,
+      "probability_valid": 0.951416015625,
+      "probability_optimal": 0.021240234375,
+      "expected_feasible_value_unconditional": 14.175537109375,
+      "expected_feasible_value_conditional": 14.899409802412112,
+      "most_probable_raw_index": 139,
+      "probability_equality_valid": 0.111572265625,
+      "probability_valid_standard_error": 0.0033593234311903013,
+      "expected_energy": 10.645751953125,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "slack",
+      "mode": "noisy",
+      "logical_qubits": 9,
+      "shots": 4096,
+      "seed_simulator": 123,
+      "seed_transpiler": 42,
+      "depth": 111,
+      "cx_count": 117,
+      "routing_swaps": 15,
+      "physical_qubits": 9,
+      "total_gates": 234,
+      "ops": {
+        "cx": 117,
+        "rz": 81,
+        "sx": 27,
+        "measure": 9,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          5
+        ],
+        "weight": 6,
+        "value": 8,
+        "feasible": true
+      },
+      "selected_index": 16,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 30.76923076923077,
+      "probability_valid": 0.938232421875,
+      "probability_optimal": 0.024658203125,
+      "expected_feasible_value_unconditional": 13.8974609375,
+      "expected_feasible_value_conditional": 14.812386156648452,
+      "most_probable_raw_index": 7,
+      "probability_equality_valid": 0.102294921875,
+      "probability_valid_standard_error": 0.0037614520582244957,
+      "expected_energy": 21.87841796875,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "A",
+      "encoding": "hinge",
+      "mode": "ideal",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 2026,
+      "seed_transpiler": 42,
+      "depth": 192,
+      "cx_count": 186,
+      "routing_swaps": 34,
+      "physical_qubits": 5,
+      "total_gates": 257,
+      "ops": {
+        "cx": 186,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "selected_index": 15,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 100.0,
+      "probability_valid": 0.7919921875,
+      "probability_optimal": 0.140380859375,
+      "expected_feasible_value_unconditional": 17.156005859375,
+      "expected_feasible_value_conditional": 21.661837237977807,
+      "most_probable_raw_index": 15,
+      "probability_valid_standard_error": 0.00634191326625494,
+      "expected_energy": -21.482421875,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "A",
+      "encoding": "hinge",
+      "mode": "noisy",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 2026,
+      "seed_transpiler": 42,
+      "depth": 192,
+      "cx_count": 186,
+      "routing_swaps": 34,
+      "physical_qubits": 5,
+      "total_gates": 257,
+      "ops": {
+        "cx": 186,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "weight": 15,
+        "value": 24,
+        "feasible": true
+      },
+      "selected_index": 30,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 92.3076923076923,
+      "probability_valid": 0.83447265625,
+      "probability_optimal": 0.070556640625,
+      "expected_feasible_value_unconditional": 15.0869140625,
+      "expected_feasible_value_conditional": 18.079578700994734,
+      "most_probable_raw_index": 30,
+      "probability_valid_standard_error": 0.005807122054673749,
+      "expected_energy": -17.74267578125,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "hinge",
+      "mode": "ideal",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 2026,
+      "seed_transpiler": 42,
+      "depth": 140,
+      "cx_count": 105,
+      "routing_swaps": 3,
+      "physical_qubits": 9,
+      "total_gates": 176,
+      "ops": {
+        "cx": 105,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "selected_index": 15,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 100.0,
+      "probability_valid": 0.784423828125,
+      "probability_optimal": 0.136474609375,
+      "expected_feasible_value_unconditional": 16.994140625,
+      "expected_feasible_value_conditional": 21.664488017429193,
+      "most_probable_raw_index": 15,
+      "probability_valid_standard_error": 0.006425335252279044,
+      "expected_energy": -21.5205078125,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "hinge",
+      "mode": "noisy",
+      "logical_qubits": 5,
+      "shots": 4096,
+      "seed_simulator": 2026,
+      "seed_transpiler": 42,
+      "depth": 140,
+      "cx_count": 105,
+      "routing_swaps": 3,
+      "physical_qubits": 9,
+      "total_gates": 176,
+      "ops": {
+        "cx": 105,
+        "rz": 51,
+        "sx": 15,
+        "measure": 5,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "weight": 15,
+        "value": 24,
+        "feasible": true
+      },
+      "selected_index": 30,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 92.3076923076923,
+      "probability_valid": 0.816650390625,
+      "probability_optimal": 0.0859375,
+      "expected_feasible_value_unconditional": 15.87353515625,
+      "expected_feasible_value_conditional": 19.437369207772797,
+      "most_probable_raw_index": 30,
+      "probability_valid_standard_error": 0.0060461387253026395,
+      "expected_energy": -19.080810546875,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "slack",
+      "mode": "ideal",
+      "logical_qubits": 9,
+      "shots": 4096,
+      "seed_simulator": 2026,
+      "seed_transpiler": 42,
+      "depth": 111,
+      "cx_count": 117,
+      "routing_swaps": 15,
+      "physical_qubits": 9,
+      "total_gates": 234,
+      "ops": {
+        "cx": 117,
+        "rz": 81,
+        "sx": 27,
+        "measure": 9,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          3,
+          4
+        ],
+        "weight": 6,
+        "value": 12,
+        "feasible": true
+      },
+      "selected_index": 12,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 46.15384615384615,
+      "probability_valid": 0.95458984375,
+      "probability_optimal": 0.023193359375,
+      "expected_feasible_value_unconditional": 14.154541015625,
+      "expected_feasible_value_conditional": 14.827877237851663,
+      "most_probable_raw_index": 300,
+      "probability_equality_valid": 0.12060546875,
+      "probability_valid_standard_error": 0.0032531562933529766,
+      "expected_energy": 10.43896484375,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    },
+    {
+      "processor": "B",
+      "encoding": "slack",
+      "mode": "noisy",
+      "logical_qubits": 9,
+      "shots": 4096,
+      "seed_simulator": 2026,
+      "seed_transpiler": 42,
+      "depth": 111,
+      "cx_count": 117,
+      "routing_swaps": 15,
+      "physical_qubits": 9,
+      "total_gates": 234,
+      "ops": {
+        "cx": 117,
+        "rz": 81,
+        "sx": 27,
+        "measure": 9,
+        "barrier": 1
+      },
+      "selected": {
+        "items": [
+          3,
+          4
+        ],
+        "weight": 6,
+        "value": 12,
+        "feasible": true
+      },
+      "selected_index": 12,
+      "selection_rule": "most probable feasible item string",
+      "selected_value_pct_optimum": 46.15384615384615,
+      "probability_valid": 0.936767578125,
+      "probability_optimal": 0.0244140625,
+      "expected_feasible_value_unconditional": 13.843994140625,
+      "expected_feasible_value_conditional": 14.778472765181132,
+      "most_probable_raw_index": 280,
+      "probability_equality_valid": 0.099853515625,
+      "probability_valid_standard_error": 0.0038028207913852704,
+      "expected_energy": 22.086181640625,
+      "best_observed_feasible": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weight": 14,
+        "value": 26,
+        "feasible": true
+      },
+      "best_observed_value_pct_optimum": 100.0
+    }
+  ],
+  "summary": [
+    {
+      "processor": "A",
+      "encoding": "hinge",
+      "seeds": [
+        7,
+        123,
+        2026
+      ],
+      "mean_probability_optimal": 0.07356770833333333,
+      "sample_std_probability_optimal": 0.002633250274635976,
+      "mean_probability_valid": 0.8362630208333334
+    },
+    {
+      "processor": "B",
+      "encoding": "hinge",
+      "seeds": [
+        7,
+        123,
+        2026
+      ],
+      "mean_probability_optimal": 0.09033203125,
+      "sample_std_probability_optimal": 0.0038369711048588163,
+      "mean_probability_valid": 0.8201497395833334
+    },
+    {
+      "processor": "B",
+      "encoding": "slack",
+      "seeds": [
+        7,
+        123,
+        2026
+      ],
+      "mean_probability_optimal": 0.024576822916666668,
+      "sample_std_probability_optimal": 0.00014095465556387347,
+      "mean_probability_valid": 0.93798828125
+    }
+  ],
+  "scope": "Simulator sampling/noise seeds only; transpiler seed and optimized angles fixed."
+}

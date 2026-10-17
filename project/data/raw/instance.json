@@ -1,0 +1,19 @@
+{
+  "problem_id": "PS-O3",
+  "values": [
+    10,
+    4,
+    7,
+    5,
+    8
+  ],
+  "weights": [
+    5,
+    3,
+    4,
+    2,
+    6
+  ],
+  "capacity": 15,
+  "penalty": 2
+}

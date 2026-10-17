@@ -1,0 +1,5 @@
+{
+  "qubo_states_verified": 512,
+  "slack_reduction_states_verified": 32,
+  "optimal_value": 26
+}

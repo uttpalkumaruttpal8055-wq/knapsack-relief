@@ -1,0 +1,86 @@
+[
+  {
+    "processor": "A",
+    "encoding": "hinge",
+    "mode": "ideal",
+    "shots": 4096,
+    "valid_95pct_wilson": [
+      0.7713176716372288,
+      0.7965091439158405
+    ],
+    "optimal_95pct_wilson": [
+      0.12984272762331459,
+      0.15110510216601195
+    ]
+  },
+  {
+    "processor": "A",
+    "encoding": "hinge",
+    "mode": "noisy",
+    "shots": 4096,
+    "valid_95pct_wilson": [
+      0.8237808955460649,
+      0.8464889021944136
+    ],
+    "optimal_95pct_wilson": [
+      0.06681574757964917,
+      0.08290750026485291
+    ]
+  },
+  {
+    "processor": "B",
+    "encoding": "hinge",
+    "mode": "ideal",
+    "shots": 4096,
+    "valid_95pct_wilson": [
+      0.7733104278140933,
+      0.7984189775365914
+    ],
+    "optimal_95pct_wilson": [
+      0.1291342500195995,
+      0.15035010859562115
+    ]
+  },
+  {
+    "processor": "B",
+    "encoding": "hinge",
+    "mode": "noisy",
+    "shots": 4096,
+    "valid_95pct_wilson": [
+      0.8105078570099387,
+      0.8339072833213366
+    ],
+    "optimal_95pct_wilson": [
+      0.08449967178198625,
+      0.102298179139864
+    ]
+  },
+  {
+    "processor": "B",
+    "encoding": "slack",
+    "mode": "ideal",
+    "shots": 4096,
+    "valid_95pct_wilson": [
+      0.9433604028488648,
+      0.956674369226232
+    ],
+    "optimal_95pct_wilson": [
+      0.015721612791882385,
+      0.02424129699468108
+    ]
+  },
+  {
+    "processor": "B",
+    "encoding": "slack",
+    "mode": "noisy",
+    "shots": 4096,
+    "valid_95pct_wilson": [
+      0.930956400000643,
+      0.9456628332887602
+    ],
+    "optimal_95pct_wilson": [
+      0.020556805860422567,
+      0.030138225869583788
+    ]
+  }
+]
