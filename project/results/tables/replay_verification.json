@@ -1,0 +1,34 @@
+{
+  "qubo_states_verified": 512,
+  "slack_reduction_states_verified": 32,
+  "optimal_value": 26,
+  "raw_count_tables_verified": 6,
+  "saved_angles_verified": 2,
+  "replay": [
+    {
+      "file": "counts_A_hinge_ideal.json",
+      "exact_counts_match": true
+    },
+    {
+      "file": "counts_A_hinge_noisy.json",
+      "exact_counts_match": true
+    },
+    {
+      "file": "counts_B_hinge_ideal.json",
+      "exact_counts_match": true
+    },
+    {
+      "file": "counts_B_hinge_noisy.json",
+      "exact_counts_match": true
+    },
+    {
+      "file": "counts_B_slack_ideal.json",
+      "exact_counts_match": true
+    },
+    {
+      "file": "counts_B_slack_noisy.json",
+      "exact_counts_match": true
+    }
+  ],
+  "all_counts_exactly_reproduced": true
+}
