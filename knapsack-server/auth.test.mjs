@@ -9,13 +9,16 @@ test('signup, hashing, isolation, login, static protection, logout and origin ch
  assert.equal((await request('/app.js')).status,303);
  assert.equal((await request('/auth/signup',{method:'POST',origin:'https://attacker.example',body:{}})).status,403);
  assert.equal((await request('/auth/signup',{method:'POST',body:{email:'test@example.com',password:'short'}})).status,400);
- const credentials={email:'test@example.com',password:'a unique demo passphrase 2026'};
+ const credentials={email:'test@example.com',password:'abc123'};
  const signup=await request('/auth/signup',{method:'POST',body:credentials});assert.equal(signup.status,200);
  assert.match(signup.headers['Set-Cookie'],/HttpOnly/);assert.match(signup.headers['Set-Cookie'],/SameSite=Strict/);
  const token=signup.headers['Set-Cookie'].split(';')[0];
  const file=await fs.readFile(path.join(dataDir,'accounts.json'),'utf8');assert.ok(!file.includes(credentials.password));const stored=JSON.parse(file)[0];assert.equal(stored.password.iterations,600000);assert.ok(stored.password.salt);
  const home=await request('/',{token});assert.equal(home.status,200);assert.ok(home.body.includes('/auth/backend.js'));
  assert.equal((await request('/auth/backend.js',{token})).status,200);
+ const globe=await request('/earth-orbit.html',{token});assert.equal(globe.status,200);assert.equal(globe.headers['X-Frame-Options'],'SAMEORIGIN');
+ assert.ok(home.body.indexOf('id="earth-orbit-section"')>home.body.indexOf('id="resources"'));
+ assert.ok(home.body.indexOf('id="earth-orbit-section"')<home.body.indexOf('class="mainfooter"'));
  assert.equal((await request('/server.mjs',{token})).status,404);
  const image=await request('/auth/disaster-response-background.png');assert.equal(image.status,200);assert.equal(image.headers['Content-Type'],'image/png');
  assert.equal((await request('/auth/login',{method:'POST',body:{...credentials,password:'incorrect password'}})).status,401);

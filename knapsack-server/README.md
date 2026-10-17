@@ -10,7 +10,7 @@ From this folder:
 node server.mjs
 ```
 
-Open **http://127.0.0.1:3000** and create an account. Use a unique test passphrase at least 15 characters long. Public signup, login and sign-out are implemented. Opening the HTML through `file://` does not run this server; it retains the clearly labeled demo interface.
+Open **http://127.0.0.1:3000** and create an account. Use a unique test passphrase at least 6 characters long. Public signup, login and sign-out are implemented. Opening the HTML through `file://` does not run this server; it retains the clearly labeled demo interface.
 
 ## Run on your domain
 
@@ -29,7 +29,7 @@ PORT=3000
 
 ## What is implemented
 
-- Public email/password signup; minimum password length 15 characters, maximum 256.
+- Public email/password signup; minimum password length 6 characters, maximum 256.
 - Per-account random salts, PBKDF2-HMAC-SHA256 with 600,000 iterations and constant-time password comparison.
 - Random opaque sessions stored only on the server; eight-hour expiry; session revocation on sign-out and rotation on sign-in. Server restarts end existing sessions.
 - HttpOnly, SameSite=Strict cookies, and Secure `__Host-` cookies in production.
@@ -57,3 +57,4 @@ References: https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Chea
 ## Background
 
 The realistic rescue boats, supply trucks and relief campus background is an AI-generated illustrative scene, not evidence of a real disaster. `../knapsack/BACKGROUND-PROMPT.txt` records the built-in ImageGen prompt and asset provenance.
+

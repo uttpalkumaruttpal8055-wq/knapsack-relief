@@ -25,7 +25,7 @@ export async function createApp({origin='http://127.0.0.1:3000',production=false
  function newSession(req,res,user){const previous=getSession(req);if(previous)sessions.delete(previous.key);for(const [k,v]of sessions)if(v.expiry<Date.now())sessions.delete(k);if(sessions.size>=2000)throw Error('Session capacity reached');const token=randomBytes(32).toString('hex');sessions.set(digest(token),{userId:user.id,expiry:Date.now()+ttl});response(res,200,{ok:true},{'Set-Cookie':cookie(token)})}
  async function saveAccounts(){const operation=writes.then(async()=>{const tmp=accountFile+'.tmp';await fs.writeFile(tmp,JSON.stringify(accounts),{mode:0o600});await fs.rename(tmp,accountFile)});writes=operation.catch(()=>{});return operation}
  const publicFiles={'/auth/base.css':'style.css','/auth/login.css':'login.css','/auth/disaster-response-background.png':'disaster-response-background.png','/auth/signin.js':null};
- const protectedFiles=new Set(['index.html','style.css','glass.css','command.css','annotations.css','login.css','app.js','command.js','annotations.js','lucknow-alert.js','login.js','disaster-response-background.png']);
+ const protectedFiles=new Set(['earth-orbit.html','index.html','style.css','glass.css','command.css','annotations.css','login.css','app.js','command.js','annotations.js','lucknow-alert.js','login.js','disaster-response-background.png']);
  const mime=file=>file.endsWith('.css')?'text/css':file.endsWith('.js')?'text/javascript':file.endsWith('.png')?'image/png':'text/html';
  async function handler(req,res){try{
    const url=new URL(req.url,origin),route=url.pathname;
@@ -39,7 +39,7 @@ export async function createApp({origin='http://127.0.0.1:3000',production=false
      const email=typeof body.email==='string'?body.email.trim().toLowerCase():'',password=body.password;
      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||email.length>254||typeof password!=='string'||password.length>256)return response(res,400,{error:'Enter a valid email and password.'});
      if(limited('email:'+email))return response(res,429,{error:'Too many attempts. Try again later.'});
-     if(route==='/auth/signup'&&password.length<15)return response(res,400,{error:'Use a password with at least 15 characters.'});
+     if(route==='/auth/signup'&&password.length<6)return response(res,400,{error:'Use a password with at least 6 characters.'});
      if(hashJobs>=4)return response(res,503,{error:'Sign-in service is busy. Try again shortly.'});
      hashJobs++;
      try{
@@ -65,7 +65,7 @@ export async function createApp({origin='http://127.0.0.1:3000',production=false
    if(route==='/auth/backend.js')return response(res,200,`window.KNAPSACK_SERVER_AUTH=true;window.KNAPSACK_STORAGE_PREFIX=${JSON.stringify('user-'+session.userId+':')};`,{'Content-Type':'text/javascript'});
    let file=route==='/'?'index.html':route.slice(1);if(!protectedFiles.has(file))return response(res,404,{error:'Not found.'});
    const body=await fs.readFile(path.join(siteDir,file));
-   return response(res,200,file==='index.html'?body.toString().replace('<head>','<head><script src="/auth/backend.js"></script>'):body,{'Content-Type':mime(file)+'; charset=utf-8'});
+   return response(res,200,file==='index.html'?body.toString().replace('<head>','<head><script src="/auth/backend.js"></script>'):body,{'Content-Type':mime(file)+'; charset=utf-8',...(file==='earth-orbit.html'?{'X-Frame-Options':'SAMEORIGIN'}:{})});
  }catch{return response(res,500,{error:'Server error. Please try again.'})}}
  return {handler};
 }
@@ -75,3 +75,4 @@ if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.ur
  const {handler}=await createApp({origin:process.env.APP_ORIGIN||`http://127.0.0.1:${port}`,production,dataDir:process.env.DATA_DIR||path.join(base,'data')});
  http.createServer(handler).listen(port,process.env.HOST||(production?'0.0.0.0':'127.0.0.1'),()=>console.log(`Knapsack authentication server listening on port ${port}`));
 }
+
